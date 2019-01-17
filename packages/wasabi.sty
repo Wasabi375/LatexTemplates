@@ -1,1 +1,30 @@
-/Users/burkhard/Library/texmf/tex/latex/wasabi/wasabi.sty
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{wasabi}[17/01/2019]
+
+% Exercise Section ----------------------------------------------------------
+\DeclareOption{exerciseDE}{%
+	\newcommand{\exercise}{\section{Aufgabe}}%
+	\newcommand{\subexercise}{\subsection{}}%
+}
+\DeclareOption{exerciseEN}{%
+	\newcommand{\exercise}{\section{Exercise}}%
+	\newcommand{\subexercise}{\subsection{}}%
+}
+\DeclareOption{exalpha}{%
+\renewcommand\thesubsection{\thesection.\alph{subsection}}
+}
+\ProcessOptions
+
+
+% Math ----------------------------------------------------------------------
+\RequirePackage{amsmath}
+\RequirePackage{amsfonts}
+\RequirePackage{amssymb}
+\RequirePackage{mathtools}
+
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+
+
+\endinput

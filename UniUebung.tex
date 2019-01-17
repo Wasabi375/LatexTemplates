@@ -1,1 +1,56 @@
-/Users/burkhard/.vscode/extensions/bam.vscode-file-templates-1.1.0/templates/UniÜbung.tex
+%% Dokumentenklasse (Koma Script) -----------------------------------------
+\documentclass[%
+   11pt,              % Schriftgroesse
+   ngerman,           % wird an andere Pakete weitergereicht
+   a4paper,           % Seitengroesse
+]{scrartcl}%     Klassen: scrartcl, scrreprt, scrbook
+% -------------------------------------------------------------------------
+
+\usepackage[utf8]{inputenc} 
+\usepackage[ngerman]{babel}
+
+% Wasabi Custom -----------------------------------------------------------
+\usepackage[%
+	exerciseDE, 		% loads the exercise section
+	exalpha				% changes the number format of (subexercise/subsection)
+						% to use a, b, c, etc
+]{wasabi}
+% -------------------------------------------------------------------------
+
+% References --------------------------------------------------------------
+\usepackage{hyperref} % allows usage of \url{url} and \href{url}{desc} and more
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+	filecolor=magenta,   
+	urlcolor=blue,
+}
+% -------------------------------------------------------------------------
+
+% Header and Footer -------------------------------------------------------
+% \usepackage[headsepline]{scrlayer-scrpage}
+% \clearpairofpagestyles
+% \ohead{}
+% \chead{}
+% \ihead{}
+% \ofoot{}
+% \cfoot{\pagemark}
+% \ifoot{}
+% -------------------------------------------------------------------------
+
+% Title Page --------------------------------------------------------------
+\titlehead{TU Darmstadt \\ Wintersemester 18/19}
+%\subject{}
+\title{Title}
+\author{${AUTHOR}} %separate multiple authors with \and
+\date{Date TODO} 
+% -------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\exercise
+\subexercise
+
+\end{document}
